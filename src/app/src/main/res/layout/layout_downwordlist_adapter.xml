@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp" >
+
+    <TextView
+        android:id="@+id/textViewDownWordListText1"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textColor="#2222FF"
+        android:textSize="12pt" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewDownWordListText3"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="#000000"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/textViewDownWordListText2"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/textViewDownWordListText3"
+        android:layout_toRightOf="@+id/textViewDownWordListText1"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:textColor="#000000"
+        android:textSize="8pt" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+﻿<menuitems>
+
+<menuitem>
+<title>시작 중단어 1</title>
+<comment>중국어 시작 수준 단어 2014.5.10</comment>
+<count>50</count>
+<url>startword1</url>
+</menuitem>
+
+<menuitem>
+<title>시작 중단어 2</title>
+<comment>중국어 시작 수준 단어 2014.6.4</comment>
+<count>50</count>
+<url>startword2</url>
+</menuitem>
+
+<menuitem>
+<title>초급 중단어 1</title>
+<comment>초급 수준의 기초 단어 2014.5.10</comment>
+<count>50</count>
+<url>beginnerword1</url>
+</menuitem>
+
+<menuitem>
+<title>초급 중단어 2</title>
+<comment>초급 수준의 기초 단어 2014.5.23</comment>
+<count>50</count>
+<url>beginnerword2</url>
+</menuitem>
+
+<menuitem>
+<title>초급 문장 1</title>
+<comment>초급 수준의 문장 2014.6.4</comment>
+<count>20</count>
+<url>beginnersentence1</url>
+</menuitem>
+
+<menuitem>
+<title>중급 단어 1</title>
+<comment>중급 수준의 단어 2016.3.12</comment>
+<count>30</count>
+<url>imword1</url>
+</menuitem>
+
+</menuitems>

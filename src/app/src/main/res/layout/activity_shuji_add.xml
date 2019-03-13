@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/layoutAddAdv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/textViewHanzi"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="한자"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextHanzi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textAutoComplete" >
+
+            <requestFocus />
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewMeaning"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="뜻"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/editTextMeaning"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textAutoComplete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonAddConvertPinyin"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Pinyin 인식" />
+
+        <EditText
+            android:id="@+id/editTextPinyin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textAutoComplete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonChangeGroup"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="그룹 변경"/>
+
+        <TextView
+            android:id="@+id/textGroup"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="그룹" />
+        <CheckBox
+            android:id="@+id/checkBoxExclude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="암기 완료"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/buttonAddRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TTS 읽기" />
+
+            <Button
+                android:id="@+id/buttonAddDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="단어삭제" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/buttonAddClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비우기" />
+
+            <Button
+                android:id="@+id/buttonAddPinyinEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pinyin 수정" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonAddSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="저장" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="right|bottom">
+        <Button
+            android:id="@+id/buttonAddExit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Exit" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/layoutAdvLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layoutAdv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <TextView
+	        android:text=""
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:textSize="25dp"
+		    android:paddingLeft="15dp"
+	        android:id="@+id/textViewDailyExamInfo"
+	        android:background="#ffffff"
+	        android:visibility="gone" />
+	</LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/darker_gray" />		
+    <ListView 
+	    android:id="@+id/listViewProblemList"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_weight="1"
+	    android:visibility="visible" 
+	    android:background="#ffffff">
+	
+	</ListView>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <Button 
+	        android:text="제출"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+	        android:id="@+id/buttonDailyExamSubmit" />
+	</LinearLayout>    
+</LinearLayout>

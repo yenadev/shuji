@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/layoutExamSetting1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/buttonMemSetting"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="테스트 할 단어 설정" />
+    </LinearLayout>
+    
+	<LinearLayout
+		android:id="@+id/layoutExamSetting2"
+		android:gravity="center_vertical|center_horizontal"
+		android:orientation="horizontal"
+		android:layout_alignParentLeft="true"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_below="@+id/layoutExamSetting1">
+	        <TextView 
+	    	    android:layout_height="22dp"
+	    	    android:layout_width="wrap_content"
+	    	    android:text="알림 방법"
+	    	    android:textColor="#000000"
+	    	    android:gravity="center_horizontal|center_vertical"
+	    	    android:textSize="14dp"/>
+
+	        <CheckBox
+	            android:id="@+id/checkBoxExamSettingSound"
+	            android:layout_width="wrap_content"
+	            android:layout_height="22dp"
+	            android:textSize="14dp"
+	            android:layout_marginLeft="20dp"
+	            android:checked="true"
+	            android:text="소리" />
+	        <CheckBox
+	            android:id="@+id/checkBoxExamSettingVibe"
+	            android:layout_width="wrap_content"
+	            android:layout_height="22dp"
+	            android:layout_marginLeft="20dp"
+	            android:textSize="14dp"
+	            android:checked="true"
+	            android:text="진동" />
+	</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutExamSettingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutFrontAdvLayout"
+        android:layout_below="@+id/layoutExamSetting2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.1dp"
+	        android:background="@android:color/darker_gray" />	        
+    	<TextView 
+    	    android:layout_height="30dp"
+    	    android:layout_width="fill_parent"
+    	    android:text="매일 단어 테스트를 할 시각을 설정하세요"
+    	    android:textColor="#AA3355"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:textSize="14dp"/>
+
+	   	<TextView 
+    	    android:layout_height="30dp"
+    	    android:layout_width="fill_parent"
+    	    android:text="*테스트할 단어수가 충분하지 않으면 알람이 뜨지 않습니다"
+    	    android:textColor="#333333"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:textSize="12dp"/>	
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray" />
+	
+	    <ListView
+	        android:id="@+id/listViewExamSettingTimeList"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+		/>
+	
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray" />
+    
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutExamSettingBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="테스트 알람 추가" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="종료" />
+    </LinearLayout>
+
+</RelativeLayout>

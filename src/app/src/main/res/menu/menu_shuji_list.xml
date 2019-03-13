@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--  item android:id="@+id/itemMenuShujiListSort" android:title="리스트 정렬"-->
+        <!-- menu>
+            <item android:id="@+id/itemMenuShujiListSortGroup1" android:title="1그룹만 보기"/>
+            <item android:id="@+id/itemMenuShujiListSortGroup2" android:title="2그룹만 보기"/>
+            <item android:id="@+id/itemMenuShujiListSortGroup3" android:title="3그룹만 보기"/>
+            <item android:id="@+id/itemMenuShujiListSortGroup4" android:title="4그룹만 보기"/>
+            <item android:id="@+id/itemMenuShujiListSortGroup5" android:title="5그룹만 보기"/>
+        </menu-->
+    <!-- /item -->
+    <item android:id="@+id/itemMenuShujiListSetting" android:title="리스트 설정"></item>
+    <item android:id="@+id/itemMenuShujiListSelected" android:title="선택 단어 처리">
+        <menu>
+            <item android:id="@+id/itemMenuShujiListSelMemzed" android:title="암기완료로 변경"/>
+            <item android:id="@+id/itemMenuShujiListSelUnMemzed" android:title="암기완료 해제"/>
+            <item android:id="@+id/itemMenuChangeGroup" android:title="그룹 변경"/>
+            <!--item android:id="@+id/itemMenuShujiListSelGroup1" android:title="1그룹으로 변경"/>
+            <item android:id="@+id/itemMenuShujiListSelGroup2" android:title="2그룹으로 변경"/>
+            <item android:id="@+id/itemMenuShujiListSelGroup3" android:title="3그룹으로 변경"/>
+            <item android:id="@+id/itemMenuShujiListSelGroup4" android:title="4그룹으로 변경"/>
+            <item android:id="@+id/itemMenuShujiListSelGroup5" android:title="5그룹으로 변경"/-->
+            <item android:id="@+id/itemMenuShujiListSelDelete" android:title="삭제"/>
+        </menu>
+    </item>
+    <item android:id="@+id/itemMenuShujiListBackup" android:title="DB 백업/로드">
+    	<menu>
+    		<item android:id="@+id/itemMenuShujiListBackupAll" android:title="CSV파일에 백업하기"/>
+    		<item android:id="@+id/itemMenuShujiListReadBackup" android:title="CSV파일에서 읽어오기"/>
+    		<!-- item android:id="@+id/itemMenuShujiListReadTXTBackup" android:title="TXT파일에서 읽어오기(탭으로 구분)"/-->
+    	</menu>
+	</item>
+	<item android:id="@+id/itemMenuShujiListSelectAll" android:title="모두 선택"></item>
+	<item android:id="@+id/itemMenuShujiListUnSelectAll" android:title="모두 선택 해제"></item>
+</menu>

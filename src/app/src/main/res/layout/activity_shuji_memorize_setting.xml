@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RadioGroup
+        android:id="@+id/radioGroupDisplayOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:checkedButton="@+id/radioMeanFirst"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMeanFirst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="뜻 먼저 표시" />
+
+        <RadioButton
+            android:id="@+id/radioChnFirst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="한자 먼저 표시" />
+
+    </RadioGroup> 
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMemSetDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewMemSetDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:text="암기할 단어그룹" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/cbIncludeMemorized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="암기완료한 단어 포함" />
+
+        <CheckBox
+            android:id="@+id/cbUseTTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TTS로 읽어주기" />
+
+        <CheckBox
+            android:id="@+id/cbRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="무작위 순서로 보여주기" />
+
+        <CheckBox
+            android:id="@+id/cbPinyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pinyin 숨기기" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonMemSetExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="종료" />
+        <Button
+            android:id="@+id/buttonMemSetStart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+    </LinearLayout>
+</LinearLayout>

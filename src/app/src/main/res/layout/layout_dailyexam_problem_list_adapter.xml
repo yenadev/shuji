@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="15dp">
+    <TextView 
+        android:id="@+id/textViewProblemWord"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:textColor="#AA2233"
+        android:textSize="20dp"
+        android:text="Word" />
+    <RadioGroup 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupAnswer">
+        <RadioButton 
+            android:text="1)"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:id="@+id/radioAnswer1"/>
+        <RadioButton 
+            android:text="2)"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:id="@+id/radioAnswer2"/>
+        <RadioButton 
+            android:text="3)"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:id="@+id/radioAnswer3"/>
+        <RadioButton 
+            android:text="4)"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="16dp"
+	        android:id="@+id/radioAnswer4"/>
+    </RadioGroup>
+</LinearLayout>

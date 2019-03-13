@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RadioGroup
+        android:id="@+id/radioGroupOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioDivision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="그룹으로 정렬" />
+
+        <RadioButton
+            android:id="@+id/radioAdded"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="입력순서로 정렬" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkIncludeMemorized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:checked="true"
+        android:text="암기완료한 단어 포함" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutListSetDivision"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewListSetDivision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:text="표시할 단어그룹" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView">
+
+        </ListView>
+    </LinearLayout>
+    
+
+
+    <Button
+        android:id="@+id/buttonListSetSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="확인" />
+
+    <TextView
+        android:id="@+id/textViewListSetFirstGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="* 리스트에서 보여질 단어들에 대한 설정입니다. 리스트화면의 옵션에서 다시 설정할 수 있습니다"
+        android:textSize="16dip" />
+
+</LinearLayout>
